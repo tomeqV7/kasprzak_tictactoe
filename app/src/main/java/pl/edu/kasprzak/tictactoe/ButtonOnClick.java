@@ -6,8 +6,9 @@ import android.widget.Button;
 public class ButtonOnClick implements View.OnClickListener {
     private static boolean isOMove = true;
     private Button button;
-    public ButtonOnClick(Button button) {
-        this.button = button;
+    private Board board;
+    public ButtonOnClick(Button button,Board board) {
+        this.button = button;this.board=board;
     }
     @Override
     public void onClick(View view) {
@@ -18,8 +19,16 @@ public class ButtonOnClick implements View.OnClickListener {
                 button.setText("X");
             }
             isOMove = !isOMove;
+            board.wygrana();
         }
+        ;
+        String s = "s";
+        if(s.equals(button.getText()))
+          {
+
+          }
     }
+
 }
 
 

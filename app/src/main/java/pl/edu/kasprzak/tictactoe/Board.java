@@ -11,7 +11,7 @@ public class Board {
     }
     public void setButton(Button button, int x, int y) {
         buttons[x][y] = button;
-        button.setOnClickListener(new ButtonOnClick(button));
+        button.setOnClickListener(new ButtonOnClick(button,this));
     }
 }
 
