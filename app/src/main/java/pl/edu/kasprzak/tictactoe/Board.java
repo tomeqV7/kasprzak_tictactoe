@@ -47,10 +47,17 @@ for ( int i = 0; i < buttons.length; i++) {
         for (int i =0;i<buttons.length;i++){
             for (int j = 0; j <buttons.length;j++){
                 buttons[i][j].setText("");
-                buttons[i][j].setTextColor(Color.BLACK);
+                buttons[i][j].setTextColor(Color.Blue);
             }
         }
     }
+   private void WhoWins(String won, int x1, int y1, int x2, int y2, int x3, int y3){
+        AlertDialog.Builder builder = new AlertDialog.Builder(activity);
+        builder.setMessage(" Wygrywa: " + won);
+        buttons[x1][y1].setTextColor(Color.Blue);
+        buttons[x2][y2].setTextColor(Color.Blue);
+        buttons[x3][y3].setTextColor(Color.Blue); 
+   }
         
 
 
