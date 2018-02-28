@@ -41,5 +41,16 @@ for ( int i = 0; i < buttons.length; i++) {
             WhoWins();
         }
             }
+      public void resetBoard(){
+        ButtonOnClick.isOMove = true;
+        counter = 0;
+        for (int i =0;i<buttons.length;i++){
+            for (int j = 0; j <buttons.length;j++){
+                buttons[i][j].setText("");
+                buttons[i][j].setTextColor(Color.BLACK);
+            }
+        }
+    }
+        
 
 
