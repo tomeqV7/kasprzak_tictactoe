@@ -19,16 +19,7 @@ public class ButtonOnClick implements View.OnClickListener {
                 button.setText("X");
             }
             isOMove = !isOMove;
-            board.wygrana();
+         board.CheckWinner();
         }
-        ;
-        String s = "s";
-        if(s.equals(button.getText()))
-          {
-
-          }
-    }
-
-}
 
 
